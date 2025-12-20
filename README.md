@@ -29,7 +29,7 @@ Créer un jeu de devinette simple où l'utilisateur doit deviner un nombre secre
 
 ---
 
-A list of technologies used within the project:
+La liste des technologies utilisées pour réaliser ce projet:
 
 - **HTML5 :** Structure sémantique de la page.
 - **CSS3 :** Mise en page et style visuel.
@@ -39,7 +39,7 @@ A list of technologies used within the project:
 
 ---
 
-A little intro about the installation.
+Une petite intro d'installation
 
 ```
 $ git clone https://example.com
@@ -48,36 +48,39 @@ $ npm install
 $ npm start
 ```
 
-Side information: To use the application in a special environment use `lorem ipsum` to start
-
-## Collaboration
+## 🤝 Collaboration
 
 ---
 
-Give instructions on how to collaborate with your project.
+Les contributions sont ouvertes ! Si vous avez des idées pour améliorer le code ou le design, n'hésitez pas à proposer vos changements.
 
-> Maybe you want to write a quote in this part.
-> It should go over several rows?
-> This is how you do it.
+> "Le code est comme l'humour.
+> Si vous devez l'expliquer,
+> c'est qu'il est mauvais."
+> — Cory House
 
-## FAQs
+## ❓ FAQ (Foire Aux Questions)
 
 ---
 
-A list of frequently asked questions
+Voici une liste des questions fréquentes concernant ce projet.
 
-1. **This is a question in bold**
-   Answer of the first question with _italic words_.
-2. **Second question in bold**
-   To answer this question we use an unordered list:
+1. **Le jeu fonctionne-t-il sur mobile ?**
+   Oui, l'interface est totalement _responsive_ et s'adapte aux écrans de téléphone.
 
-- First point
-- Second Point
-- Third point
+2. **Comment puis-je améliorer ce projet ?**
+   Voici quelques idées de fonctionnalités à ajouter si vous voulez vous entraîner :
 
-3. **Third question in bold**
-   Answer of the third question with _italic words_.
-4. **Fourth question in bold**
-   | Headline 1 in the tablehead | Headline 2 in the tablehead | Headline 3 in the tablehead |
-   |:--------------|:-------------:|--------------:|
-   | text-align left | text-align center | text-align right |
+   - Ajouter un compteur de tentatives.
+   - Créer un bouton "Rejouer" pour ne pas avoir à rafraîchir la page.
+   - Ajouter des niveaux de difficulté (Facile, Moyen, Difficile).
+
+3. **Puis-je utiliser ce code pour mes propres projets ?**
+   Absolument, ce projet est _open-source_ et libre de droits pour l'apprentissage.
+
+4. **Quels sont les niveaux de difficulté envisagés ?**
+   | Niveau | Intervalle de nombres | Essais max |
+   |:---|:---:|---:|
+   | Facile | 1 - 10 | Illimité |
+   | Moyen | 1 - 100 | 10 |
+   | Difficile | 1 - 1000 | 5 |
