@@ -3,35 +3,158 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Javascript Games</title>
+    <title>Arcade Games - Malaury</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <a href="./index.html">Acceuil</a>
-        <a href="./pages/plusOuMoins.html">+ ou - </a>
-        <a href="./pages/chifoumi.html">Chifoumi</a>
-        <a href="./pages/jeuDuDes.html">Jeu des Dés</a>
+      <nav class="nav">
+        <a href="./index.html" class="nav__link">Accueil</a>
+        <a href="./pages/plusOuMoins.html" class="nav__link">+ ou -</a>
+        <a href="./pages/chifoumi.html" class="nav__link">Chifoumi</a>
+        <a href="./pages/jeuDuDes.html" class="nav__link">Jeu de Dés</a>
       </nav>
+      <div class="auth-buttons">
+        <div class="buttons__login">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+          >
+            <path
+              fill="currentColor"
+              d="M30.47 4.57h-1.52V3.05h-1.53V1.52H25.9V0H3.04v6.1h1.53v1.52h1.52V6.1h18.29v1.52h1.52v15.24h-1.52v1.52h-1.53v1.52H3.04v-1.52H1.52v1.52H0V32h1.52v-4.57h19.81V32H32V6.1h-1.53Zm-24.38 0H4.57V1.52h1.52Zm3.05 0H7.61V1.52h1.53Zm13.71 0H10.66V1.52h12.19Zm7.62 10.67h-1.52V7.62h-1.53V6.1H25.9V4.57h-1.52V3.05h1.52v1.52h1.52V6.1h1.53v1.52h1.52Z"
+            />
+            <path
+              fill="currentColor"
+              d="M19.8 15.24h1.53v1.52H19.8Zm-3.04 7.62h4.57v1.52h-4.57Zm1.52-10.67h1.52v1.52h-1.52ZM19.8 32v-3.05h-4.57V32h1.53v-1.52h1.52V32zm-6.09-15.24h6.09v1.53h-6.09Zm0-4.57h1.52v1.52h-1.52Zm-1.52 3.05h1.52v1.52h-1.52Zm-1.53 7.62h1.53v1.52h-1.53Z"
+            />
+            <path
+              fill="currentColor"
+              d="M24.38 21.33V9.14H9.14v12.19ZM10.66 10.67h12.19v9.14H10.66ZM7.61 22.86h1.53v1.52H7.61ZM6.09 7.62h1.52v13.71H6.09ZM4.57 21.33h1.52v1.53H4.57Zm-1.53 1.53h1.53v1.52H3.04Z"
+            />
+          </svg>
+          <a href="#" class="btn btn--login">Se connecter</a>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="48"
+          height="48"
+          viewBox="0 0 48 48"
+        >
+          <defs>
+            <mask id="SVGWbHkneAU">
+              <path
+                fill="#555555"
+                stroke="#fff"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="4"
+                d="m20 15l4 4l4-4V4h-8zm0 18l4-4l4 4v11h-8zm13-5l-4-4l4-4h11v8zm-18-8l4 4l-4 4H4v-8z"
+              />
+            </mask>
+          </defs>
+          <path
+            fill="currentColor"
+            d="M0 0h48v48H0z"
+            mask="url(#SVGWbHkneAU)"
+          />
+        </svg>
+        <a href="#" class="btn btn--signup">S'inscrire</a>
+      </div>
     </header>
+
     <main>
-      <section>
-        <article>
-          <div class="container">
-            <div>
-              <img src="" alt="" />
-              <h2>titre</h2>
-            </div>
-            <div>
-              <p>description du jeu</p>
-              <p>Date de sortie</p>
-            </div>
+      <section class="games-list">
+        <article class="card card--pm">
+          <div class="card__header">
+            <img
+              src="./assets/images/jeu_plus_ou_moins.webp"
+              alt="Icône point d'interrogation"
+              class="card__icon"
+            />
+            <h3 class="card__title">+ ou -</h3>
+          </div>
+
+          <div class="card__body">
+            <p class="card__description">
+              Le test ultime de dichotomie. C'est plus ou c'est moins ?
+            </p>
+            <time class="card__date">20/12/2025</time>
+            <a href="./pages/plusOuMoins.html" class="card__btn"
+              >Jouer maintenant !</a
+            >
           </div>
         </article>
-        <article></article>
-        <article></article>
+
+        <article class="card card--rps">
+          <div class="card__header">
+            <img
+              src="./assets/images/jeu_pierre_feuille_ciseau.webp"
+              alt="Icône main chifoumi"
+              class="card__icon"
+            />
+            <h3 class="card__title">Chifoumi</h3>
+          </div>
+
+          <div class="card__body">
+            <p class="card__description">
+              Pierre, Feuille, Ciseaux. Arriveras-tu à gagner la manche ?
+            </p>
+            <time class="card__date">20/12/2025</time>
+            <a href="./pages/chifoumi.html" class="card__btn"
+              >Jouer maintenant !</a
+            >
+          </div>
+        </article>
+
+        <article class="card card--dice">
+          <div class="card__header">
+            <img
+              src="./assets/images/jeu_de_dés.webp"
+              alt="Icône dé"
+              class="card__icon"
+            />
+            <h3 class="card__title">Jeu du Dé</h3>
+          </div>
+
+          <div class="card__body">
+            <p class="card__description">
+              Fais confiance à <span>Math.random()</span> ! Lance le cube
+              virtuel.
+            </p>
+            <time class="card__date">20/12/2025</time>
+            <a href="./pages/jeuDuDes.html" class="card__btn"
+              >Jouer maintenant !</a
+            >
+          </div>
+        </article>
       </section>
     </main>
-    <footer></footer>
+
+    <footer>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+      >
+        <g
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-width="1.5"
+        >
+          <path
+            d="M14 15.667a4.5 4.5 0 0 1-1.714.333C9.919 16 8 14.21 8 12s1.919-4 4.286-4c.61 0 1.189.119 1.714.333"
+          />
+          <path
+            d="M7 3.338A9.95 9.95 0 0 1 12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12c0-1.821.487-3.53 1.338-5"
+          />
+        </g>
+      </svg>
+      <p>Copyright 2025 - Fait avec ❤️ par Malaury.</p>
+    </footer>
   </body>
 </html>

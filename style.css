@@ -1,0 +1,63 @@
+:root {
+  --main-color: #8e44ad;
+  --padding-card: 20px;
+  --font-title: "Arial", sans-serif;
+  --color-cream: #f2f3ae;
+  --color-ochre: #d58936;
+  --color-amber: #a44200;
+  --color-blood: #69140e;
+  --color-dark: #3c1518;
+  --bg-body: var(--color-dark);
+
+  --text-main: var(--color-cream);
+
+  --bg-card: var(--color-blood);
+
+  --btn-bg: var(--color-amber);
+  --btn-text: #ffffff; /* Texte blanc sur bouton orange */
+
+  --accent-color: var(--color-ochre);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-body);
+  color: var(--text-main);
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding-card);
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.auth-buttons a {
+  display: flex;
+  color: white;
+  text-decoration: none;
+}
+
+.card {
+  background-color: var(--bg-card);
+  border: 2px solid var(--accent-color); /* Une petite bordure ocre */
+}
+
+.card__btn {
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+}
+
+.card__btn:hover {
+  background-color: var(--accent-color); /* Il devient plus clair au survol */
+}
