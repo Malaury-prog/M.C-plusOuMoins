@@ -8,18 +8,50 @@
   </head>
   <body>
     <header>
-      <nav class="nav">
-        <a href="./index.html" class="nav__link">Accueil</a>
+      <a href="./index.html" class="logo" aria-label="Retour à l'accueil">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="currentColor"
+            d="M6 3h2v2H6zm2 2h2v2H8zm4 0h2v2h-2zm4-2h2v2h-2zm-6 4h4v2h-4zm-6 4h2v2H4zm2 2h2v2H6zm12-2h2v2h-2zm-2 2h2v2h-2zm-8 2h2v2H8zm8 0h2v2h-2zm-6 2h4v2h-4z"
+          />
+          <path fill="currentColor" d="M9 10h2v2H9zm4 0h2v2h-2z" />
+        </svg>
+      </a>
+
+      <button class="burger-menu" id="burgerBtn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-width="2"
+            d="M4 7h16M4 12h16M4 17h16"
+          />
+        </svg>
+      </button>
+
+      <nav class="nav" id="mainNav">
         <a href="./pages/plusOuMoins.html" class="nav__link">+ ou -</a>
         <a href="./pages/chifoumi.html" class="nav__link">Chifoumi</a>
         <a href="./pages/jeuDuDes.html" class="nav__link">Jeu de Dés</a>
       </nav>
+
       <div class="auth-buttons">
         <div class="buttons__login">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
+            width="28"
+            height="28"
             viewBox="0 0 32 32"
           >
             <path
@@ -35,99 +67,97 @@
               d="M24.38 21.33V9.14H9.14v12.19ZM10.66 10.67h12.19v9.14H10.66ZM7.61 22.86h1.53v1.52H7.61ZM6.09 7.62h1.52v13.71H6.09ZM4.57 21.33h1.52v1.53H4.57Zm-1.53 1.53h1.53v1.52H3.04Z"
             />
           </svg>
-          <a href="#" class="btn btn--login">Se connecter</a>
+          <a href="#" class="btn">Se connecter</a>
         </div>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="48"
-          height="48"
-          viewBox="0 0 48 48"
-        >
-          <defs>
-            <mask id="SVGWbHkneAU">
-              <path
-                fill="#555555"
-                stroke="#fff"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="4"
-                d="m20 15l4 4l4-4V4h-8zm0 18l4-4l4 4v11h-8zm13-5l-4-4l4-4h11v8zm-18-8l4 4l-4 4H4v-8z"
-              />
-            </mask>
-          </defs>
-          <path
-            fill="currentColor"
-            d="M0 0h48v48H0z"
-            mask="url(#SVGWbHkneAU)"
-          />
-        </svg>
-        <a href="#" class="btn btn--signup">S'inscrire</a>
+        <div class="buttons__sign_up">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            viewBox="0 0 48 48"
+          >
+            <defs>
+              <mask id="SVGWbHkneAU">
+                <path
+                  fill="#555555"
+                  stroke="#fff"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="4"
+                  d="m20 15l4 4l4-4V4h-8zm0 18l4-4l4 4v11h-8zm13-5l-4-4l4-4h11v8zm-18-8l4 4l-4 4H4v-8z"
+                />
+              </mask>
+            </defs>
+            <path
+              fill="currentColor"
+              d="M0 0h48v48H0z"
+              mask="url(#SVGWbHkneAU)"
+            />
+          </svg>
+          <a href="#" class="btn">S'inscrire</a>
+        </div>
       </div>
     </header>
 
     <main>
       <section class="games-list">
-        <article class="card card--pm">
+        <article class="card">
           <div class="card__header">
             <img
               src="./assets/images/jeu_plus_ou_moins.webp"
-              alt="Icône point d'interrogation"
+              alt="Jeu Plus ou Moins"
               class="card__icon"
             />
-            <h3 class="card__title">+ ou -</h3>
           </div>
-
           <div class="card__body">
+            <h3 class="card__title">+ ou -</h3>
             <p class="card__description">
               Le test ultime de dichotomie. C'est plus ou c'est moins ?
             </p>
-            <time class="card__date">20/12/2025</time>
-            <a href="./pages/plusOuMoins.html" class="card__btn"
-              >Jouer maintenant !</a
-            >
+            <div class="card__footer">
+              <time class="card__date">20/12/2025</time>
+              <a href="./pages/plusOuMoins.html" class="card__btn">Jouer</a>
+            </div>
           </div>
         </article>
 
-        <article class="card card--rps">
+        <article class="card">
           <div class="card__header">
             <img
               src="./assets/images/jeu_pierre_feuille_ciseau.webp"
-              alt="Icône main chifoumi"
+              alt="Jeu Chifoumi"
               class="card__icon"
             />
-            <h3 class="card__title">Chifoumi</h3>
           </div>
-
           <div class="card__body">
+            <h3 class="card__title">Chifoumi</h3>
             <p class="card__description">
               Pierre, Feuille, Ciseaux. Arriveras-tu à gagner la manche ?
             </p>
-            <time class="card__date">20/12/2025</time>
-            <a href="./pages/chifoumi.html" class="card__btn"
-              >Jouer maintenant !</a
-            >
+            <div class="card__footer">
+              <time class="card__date">20/12/2025</time>
+              <a href="./pages/chifoumi.html" class="card__btn">Jouer</a>
+            </div>
           </div>
         </article>
 
-        <article class="card card--dice">
+        <article class="card">
           <div class="card__header">
             <img
               src="./assets/images/jeu_de_dés.webp"
-              alt="Icône dé"
+              alt="Jeu de dés"
               class="card__icon"
             />
-            <h3 class="card__title">Jeu du Dé</h3>
           </div>
-
           <div class="card__body">
+            <h3 class="card__title">Jeu du Dé</h3>
             <p class="card__description">
-              Fais confiance à <span>Math.random()</span> ! Lance le cube
-              virtuel.
+              Fais confiance au hasard ! Lance le cube virtuel.
             </p>
-            <time class="card__date">20/12/2025</time>
-            <a href="./pages/jeuDuDes.html" class="card__btn"
-              >Jouer maintenant !</a
-            >
+            <div class="card__footer">
+              <time class="card__date">20/12/2025</time>
+              <a href="./pages/jeuDuDes.html" class="card__btn">Jouer</a>
+            </div>
           </div>
         </article>
       </section>
@@ -156,5 +186,7 @@
       </svg>
       <p>Copyright 2025 - Fait avec ❤️ par Malaury.</p>
     </footer>
+
+    <script src="./Js/main.js"></script>
   </body>
 </html>
